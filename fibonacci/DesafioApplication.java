@@ -8,7 +8,7 @@ public class DesafioApplication {
 	public static List<Integer> fibonacci() {
 
 		int num = 0;
-		List<Integer> seqfibo = new ArrayList<Integer>();
+		List<Integer> seqfibo = new ArrayList<>();
 
 		while (num <= 350) {
 			if (seqfibo.size() != 0) {
@@ -27,7 +27,6 @@ public class DesafioApplication {
 	}
 
 	public static Boolean isFibonacci(Integer a) {
-		int n = a;
-		return fibonacci().contains(n);
+		return fibonacci().contains(a);
 	}
 }
